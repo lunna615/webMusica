@@ -1,4 +1,17 @@
+* {
+    background-color: #5a5a5a;
+    padding: 5px 10px;
+}  
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
 #fotoPerfil {
     width: 20%;
     max-width: 70px;
 }
+
