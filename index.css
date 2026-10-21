@@ -1,17 +1,90 @@
+/**
+* ?   Paleta de colores:
+* ?    #be5504 - Color característico de la página (naranja/marron)
+* ?    #1a120a - Fondo (Marrón oscuro)
+* ?    #2c1f15 - Fondo header
+* ?    #4a3525 - 
+* ?    #997d65 - 
+* ?    #eedcc8 - 
+* ?    #ffffff - Blanco, para detalles 
+*/
+
 * {
-    background-color: #5a5a5a;
+    user-select: none;
+}
+
+body {
+    background-color: #1a120a;
     padding: 5px 10px;
-}  
+}
+
+/** HEADER Y SUS ELEMENTOS */
 
 header {
-    display: flex;
-    padding: 10px;
-    background-color: #333;
+    /* PRESENTACIÓN */
+    display: grid;
+    flex-direction: row;
+
+    /* POSICIONES */
+    margin: 0;
+    padding: 10px 50px;
+
+    /* COLORES */
+    background-color: #2c1f15;
     color: #fff;
 }
 
-#fotoPerfil {
-    width: 20%;
-    max-width: 70px;
+header>div {
+    /* PRESENTACIÓN */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 0.5fr 0.5fr;
+
+    /* POSICIONES */
+    align-items: center;
 }
 
+#logo {
+    /* TAMAÑOS */
+    width: 60px;
+    height: 35px;
+}
+
+#buscar {
+    /* TAMAÑOS */
+    width: 50px;
+
+    /* POSICIONES */
+    margin-left: auto;
+}
+
+#fotoPerfil {
+    /* TAMAÑOS */
+    width: 60px;
+    max-width: 70px;
+
+    /* POSICIONES */
+    margin-left: auto;
+}
+
+header>nav {
+    /* PRESENTACIÓN */
+    display: flex;
+    flex-direction: row;
+
+    /* POSICIONES */
+    justify-content: space-between;
+}
+
+header>nav>p {
+    /* COLORES */
+    background-color: #4a3525;
+
+    /* POSICIONES */
+    padding: 5px 16px;
+    border-radius: 15px;
+}
+
+#pagActual {
+    /* COLORES */
+    background-color: #be5504;
+}

@@ -1,13 +1,16 @@
-* {
-    background-color: #5a5a5a;
+body {
+    background-color: #2c1f15;
+    font-family: 'Open Sans', 'Arial';
     padding: 5px 10px;
 }  
+
+/** HEADER Y SUS ELEMENTOS */
 
 header {
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 10px 50px;
+    background-color: #1a120a;
     color: #fff;
 }
 
@@ -20,18 +23,25 @@ h1 {
     font-size: 30px;
 }
 
+/** BOTÓN INICIO SESIÓN / REGISTRO */
+
 #sesion {
+    /* POSICIÓN */
     display: flex;
     margin: 0 auto;
-    background-color:blueviolet;
+    padding: 10px 20px;
+
+    /* COLORES Y ESTILOS */
+    background-color:#be5504;
     color:white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 30px;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 30px;
 }
 
 #sesion:hover {
-    background-color: #333;
+    /* COLORES */
+    background-color: #997d65;
+    color: #1a120a;
 }
