@@ -1,0 +1,11 @@
+header, footer, button, .boton, form br, hr {
+    display: none;
+}
+
+main img {
+    max-width: 80px;
+}
+
+label, input, textarea {
+    display: block;
+}

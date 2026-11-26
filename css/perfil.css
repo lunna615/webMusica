@@ -1,0 +1,67 @@
+@import url("cabecera.css");
+
+/** BODY */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #120c07;
+    color: #eedcc8;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+/** MAIN */
+
+main {
+    box-sizing: border-box;
+    width: 92%;
+    max-width: 440px;
+    margin: auto;
+    padding: 24px;
+    border: 1px solid #4a3525;
+    border-radius: 20px;
+    background-color: #2c1f15;
+    text-align: center;
+}
+
+/** FOTO DE PERFIL */
+
+.fotoPerfil {
+    width: 136px;
+    height: 136px;
+    padding: 6px;
+    object-fit: contain;
+}
+
+h2 {
+    margin: 12px 0 8px;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+/** BOTÓN */
+
+.boton {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background-color: #be5504;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #eedcc8;
+    color: #2c1f15;
+}
+
+a:focus-visible {
+    outline: 2px solid #eedcc8;
+    outline-offset: 3px;
+}

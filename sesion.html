@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sesion-principal.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Mocca</title>
+</head>
+
+<body>
+  <header>
+      <div class="cabecera">
+          <a class="volver" href="perfil.html" title="Volver a Mi perfil">← <span>Mi perfil</span></a>
+          <a class="marca" href="index.html">
+              <img src="img/logo.png" alt="">
+              <strong>Mocca</strong>
+          </a>
+      </div>
+  </header>
+  <main>
+    <h1>Regístrate</h1>
+    <form action="sesion.html" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <br><br>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <label for="dni">DNI</label>
+      <input type="text" id="dni" name="dni" maxlength="9" pattern="[0-9]{8}[A-Za-z]"
+        title="Escribe ocho cifras seguidas de una letra, sin espacios." required>
+      <br><br>
+
+      <label for="mensaje">Mensaje</label>
+      <br>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      <br><br>
+
+      <button type="submit" name="registro" id="registro">Registrarse</button>
+    </form>
+
+    <hr>
+
+    <section class="iniciar-sesion">
+      <h2>Iniciar sesión</h2>
+      <form action="sesion.html" method="post">
+        <label for="email-sesion">Correo electrónico</label>
+        <input type="email" id="email-sesion" name="email" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <button type="submit" id="inicio-sesion" name="inicio-sesion">Iniciar sesión</button>
+      </form>
+    </section>
+
+    <div class="accesos-sociales">
+      <div id="google" class="boton">
+        <img src="img/google.png" alt="Google">
+      </div>
+      <div id="facebook" class="boton">
+        <img src="img/facebook.png" alt="Facebook">
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+/** PÁGINA */
+body {
+    margin: 0;
+    background-color: #120c07;
+    color: #eedcc8;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.contenedor {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+main {
+    padding: 30px 0 75px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/** CABECERA Y NAVEGACIÓN */
+header, .reproductor {
+    background-color: #2c1f15;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.marca, .controles-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    padding: 8px 2px;
+    font-size: 18px;
+}
+
+nav a:hover,
+nav a:focus {
+    box-shadow: 0 2px #be5504;
+}
+
+#logo,
+.cancion-reproductor img,
+.lista-actividad img {
+    width: 38px;
+}
+
+.buscador,
+.acceso-perfil img {
+    display: block;
+    width: 52px;
+}
+
+/** SEGUIDORES, SEGUIDOS Y AMIGOS */
+.estadisticas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.estadisticas span {
+    padding: 0 8px;
+}
+
+.estadisticas span + span {
+    border-left: 1px solid #997d65;
+}
+
+/** LISTAS GUARDADAS */
+.lista {
+    display: grid;
+    grid-template-columns: 28px 58px 1fr auto auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #4a3525;
+}
+
+.lista img,
+.artistas img,
+.cancion-reproductor img {
+    border-radius: 50%;
+}
+
+.lista img {
+    width: 100%;
+}
+
+.reproducir,
+.controles-reproduciendo p,
+.boton-favorito,
+.cabecera-historial a {
+    padding: 5px 9px;
+    border: 1px solid #4a3525;
+    border-radius: 14px;
+    background-color: #2c1f15;
+    color: #eedcc8;
+}
+
+/** ARTISTAS E HISTORIAL */
+.carrusel {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 6px;
+    overflow-x: auto;
+}
+
+.artistas figure,
+.cancion {
+    flex: 1 0 104px; 
+    margin: 0;
+    text-align: center;
+}
+
+.artistas img {
+    width: 104px;
+    box-sizing: border-box;
+    border: 6px solid #4a3525;
+}
+
+.cancion,
+.lista-actividad li {
+    padding: 8px;
+    border: 1px solid #4a3525;
+    border-radius: 12px;
+}
+
+.lista:hover,
+.cancion:hover,
+.cabecera-historial a:hover {
+    background-color: #4a3525;
+}
+
+.cancion img,
+.lista-actividad img {
+    border-radius: 8px;
+}
+
+.cancion img {
+    width: 92px;
+}
+
+.cancion h3,
+.cabecera-historial a {
+    font-size: 15px;
+}
+
+.cancion p,
+.cancion-reproductor span,
+.lista-actividad span {
+    display: block;
+    font-size: 12px;
+}
+
+.cabecera-historial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/** DÍAS DEL HISTORIAL */
+.dia-historial {
+    margin: 10px 0 5px;
+}
+
+/** ACTIVIDAD RECIENTE */
+.lista-actividad {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.lista-actividad li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 185px;
+    background-color: #2c1f15;
+}
+
+/** REPRODUCTOR INFERIOR */
+.reproductor {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #997d65;
+}
+
+.reproduciendo, .cancion-reproductor, .controles-reproduciendo, .control-volumen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reproduciendo {
+    padding: 7px 0;
+}
+
+.reproductor p {
+    border: none;
+}
+
+.reproductor .boton-reproducir {
+    background-color: #be5504;
+}
+
+.progreso-cancion,
+.volumen {
+    height: 2px;
+    background-color: #997d65;
+}
+
+.progreso-cancion {
+    flex: 1;
+}
+
+.volumen {
+    width: 36px;
+}
+
+.icono-volumen {
+    font-size: 20px;
+}
+
+/** MENÚ Y TÍTULOS EN PANTALLAS PEQUEÑAS */
+@media (max-width: 700px) {
+    .cabecera {
+        flex-wrap: wrap; 
+    }
+
+    nav {
+        order: 1; 
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .lista img {
+        grid-row: span 2;
+    }
+
+    .lista h3 + span {
+        grid-column: 3;
+    }
+
+    .reproducir {
+        grid-column: 4;
+        grid-row: 1 / 3; 
+    }
+
+    .volumen {
+        width: 24px;
+    }
+}

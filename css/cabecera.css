@@ -1,0 +1,47 @@
+/** CABECERA DE PERFIL Y SESIÓN */
+
+header {
+    background-color: #2c1f15;
+    border-bottom: 1px solid #4a3525;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.marca img {
+    width: 42px;
+}
+
+.marca strong {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.volver {
+    padding: 7px 12px;
+    border-radius: 18px;
+    color: #eedcc8;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.volver:hover {
+    background-color: #4a3525;
+}

@@ -1,29 +1,225 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="index.css" />
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/index-principal.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <title>Mocca</title>
 </head>
-
 <body>
     <header>
-        <div>
-            <img src="img/logo.png" alt="Logo Mocca" id="logo">
-            <h1>Darianys</h1>
-            <img src="img/lupa.png" alt="Buscar" id="buscar">
-            <a href="perfil.html"><img src="img/perfil.png" alt="Foto de perfil" id="fotoPerfil" /></a>
+        <div class="contenedor cabecera">
+            <a class="marca" href="index.html">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <h1>Mocca</h1>
+            </a>
+            <nav>
+                <a href="perfil.html">Mi perfil</a>
+                <a href="#listas">Listas</a>
+                <a href="#artistas">Artistas</a>
+                <a href="#historial">Historial</a>
+            </nav>
+            <div class="controles-cabecera">
+                <img class="buscador" src="img/lupa.png" alt="lupa">
+                <a class="acceso-perfil" href="perfil.html">
+                    <img src="img/perfil.png" alt="perfil">
+                </a>
+            </div>
         </div>
-        <nav>
-            <p id="pagActual">Mi perfil</p>
-            <p>Explorar</p>
-            <p>Géneros</p>
-            <p>Tendencia</p>
-            <p>Radio</p>
-        </nav>
     </header>
-</body>
 
+    <main class="contenedor">
+        <div class="estadisticas">
+            <span><strong>15</strong> seguidores</span>
+            <span><strong>10</strong> seguidos</span>
+            <span><strong>7</strong> amigos</span>
+        </div>
+
+        <section id="listas">
+            <h2>Listas guardadas</h2>
+            <div class="listas">
+                <article class="lista">
+                    <span class="numero-de-lista">01</span>
+                    <img src="img/indice/formula-vol-2.png" alt="Lista para el coche">
+                    <h3>Para el coche</h3>
+                    <span>55 canciones</span>
+                    <p class="reproducir">▶ Reproducir</p>
+                </article>
+                <article class="lista">
+                    <span class="numero-de-lista">02</span>
+                    <img src="img/indice/cosa-nuestra.png" alt="Lista baile">
+                    <h3>Baile</h3>
+                    <span>123 canciones</span>
+                    <p class="reproducir">▶ Reproducir</p>
+                </article>
+                <article class="lista">
+                    <span class="numero-de-lista">03</span>
+                    <img src="img/indice/sin-poderte-hablar.png" alt="Lista clásicos">
+                    <h3>Clásicos</h3>
+                    <span>75 canciones</span>
+                    <p class="reproducir">▶ Reproducir</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="artistas">
+            <h2>Artistas guardados</h2>
+            <div class="artistas carrusel">
+                <figure>
+                    <img src="img/indice/shakira.png" alt="shakira">
+                    <figcaption>Shakira</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/indice/alejandro-sanz.png" alt="alejandro sanz">
+                    <figcaption>Alejandro Sanz</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/indice/jarabe-de-palo.png" alt="jarabe de palo">
+                    <figcaption>Jarabe de Palo</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/indice/prince-royce.png" alt="prince royce">
+                    <figcaption>Prince Royce</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/indice/nino-bravo.png" alt="nino bravo">
+                    <figcaption>Nino Bravo</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="historial">
+            <div class="cabecera-historial">
+                <h2>Historial de escucha</h2>
+                <a href="#historial">Ver historial completo</a>
+            </div>
+            <h3 class="dia-historial">Hoy</h3>
+            <div class="carrusel canciones-del-dia">
+                <article class="cancion">
+                    <img src="img/indice/risk-it-all.png" alt="risk it all">
+                    <h3>Risk It All</h3>
+                    <p>Bruno Mars</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/antes-de-ti.png" alt="antes de ti">
+                    <h3>Antes de ti</h3>
+                    <p>Mon Laferte</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/reminiscencias.png" alt="reminiscencias">
+                    <h3>Reminiscencias</h3>
+                    <p>Julio Jaramillo</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/me-bebi-tu-recuerdo.png" alt="me bebi tu recuerdo">
+                    <h3>Me bebí tu recuerdo</h3>
+                    <p>Galy Galiano</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/vamos-a-darnos-un-tiempo.png" alt="vamos a darnos un tiempo">
+                    <h3>Vamos a darnos tiempo</h3>
+                    <p>José José</p>
+                </article>
+            </div>
+            <h3 class="dia-historial">Ayer</h3>
+            <div class="carrusel canciones-del-dia">
+                <article class="cancion">
+                    <img src="img/indice/reminiscencias.png" alt="reminiscencias">
+                    <h3>Reminiscencias</h3>
+                    <p>Julio Jaramillo</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/me-bebi-tu-recuerdo.png" alt="me bebi tu recuerdo">
+                    <h3>Me bebí tu recuerdo</h3>
+                    <p>Galy Galiano</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/vamos-a-darnos-un-tiempo.png" alt="vamos a darnos un tiempo">
+                    <h3>Vamos a darnos tiempo</h3>
+                    <p>José José</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/risk-it-all.png" alt="risk it all">
+                    <h3>Risk It All</h3>
+                    <p>Bruno Mars</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/antes-de-ti.png" alt="antes de ti">
+                    <h3>Antes de ti</h3>
+                    <p>Mon Laferte</p>
+                </article>
+            </div>
+            <h3 class="dia-historial">20 de noviembre</h3>
+            <div class="carrusel canciones-del-dia">
+                <article class="cancion">
+                    <img src="img/indice/vamos-a-darnos-un-tiempo.png" alt="vamos a darnos un tiempo">
+                    <h3>Vamos a darnos tiempo</h3>
+                    <p>José José</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/risk-it-all.png" alt="risk it all">
+                    <h3>Risk It All</h3>
+                    <p>Bruno Mars</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/antes-de-ti.png" alt="antes de ti">
+                    <h3>Antes de ti</h3>
+                    <p>Mon Laferte</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/reminiscencias.png" alt="reminiscencias">
+                    <h3>Reminiscencias</h3>
+                    <p>Julio Jaramillo</p>
+                </article>
+                <article class="cancion">
+                    <img src="img/indice/me-bebi-tu-recuerdo.png" alt="me bebi tu recuerdo">
+                    <h3>Me bebí tu recuerdo</h3>
+                    <p>Galy Galiano</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>Actividad reciente</h2>
+            <ul class="lista-actividad">
+                <li>
+                    <img src="img/indice/risk-it-all.png" alt="risk it all">
+                    <div><strong>Risk It All</strong><span>Bruno Mars</span></div>
+                </li>
+                <li>
+                    <img src="img/indice/antes-de-ti.png" alt="antes de ti">
+                    <div><strong>Antes de ti</strong><span>Mon Laferte</span></div>
+                </li>
+                <li>
+                    <img src="img/indice/reminiscencias.png" alt="reminiscencias">
+                    <div><strong>Reminiscencias</strong><span>Julio Jaramillo</span></div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer class="reproductor">
+        <div class="contenedor reproduciendo">
+            <div class="cancion-reproductor">
+                <img src="img/indice/risk-it-all.png" alt="risk it all">
+                <div>
+                    <strong>Risk It All</strong>
+                    <span>Bruno Mars</span>
+                </div>
+            </div>
+            <div class="controles-reproduciendo">
+                <p>‹</p>
+                <p class="boton-reproducir">▶</p>
+                <p>›</p>
+            </div>
+            <div class="progreso-cancion"></div>
+            <p class="boton-favorito">♡</p>
+            <div class="control-volumen">
+                <p class="icono-volumen">🔈︎</p>
+                <span class="volumen"></span>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
