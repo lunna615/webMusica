@@ -106,7 +106,7 @@ hr {
     border-top: 1px solid #997d65;
 }
 
-.accesos-sociales {
+.otras-opciones {
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -123,7 +123,7 @@ hr {
     background-color: #eedcc8;
 }
 
-.accesos-sociales .boton:hover {
+.otras-opciones .boton:hover {
     background-color: #e1c8ae;
 }
 
